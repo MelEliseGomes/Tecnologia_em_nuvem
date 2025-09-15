@@ -14,7 +14,7 @@ COPY . /var/www/html/
 RUN chown -R www-data:www-data /var/www/html && chmod -R 755 /var/www/html
 
 # Corrige configuração da porta
-RUN sed -i "sListen 80Listen ${PORT}/" /etc/apache2/ports.conf && \
+RUN sed -i "s/Listen 80Listen ${PORT}/" /etc/apache2/ports.conf && \
     sed -i "s/<VirtualHost \*:80>/<Virtual Host \*:${PORT}>/" /etc/apache2/sites-avaible/000-default.conf
 
 # Permite acesso ao diretório
