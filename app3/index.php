@@ -11,7 +11,6 @@ function stringParaBinario($string) {
     }
     return $binario;
 }
-Eeeeeuuuuu acho que sim, mas quem sou eu, né????????? 
 //Exemplo de uso
 $frase = "Mel Elise Gomes Cavalheiro";
 $fraseBinario = stringParaBinario ($frase);
